@@ -216,6 +216,63 @@ console.log("||==================||")
 
 
 
+// MAX AND MIN
+array5= [0,1,10,20,-25,5,3,2,4]
+const rs = []
+function max_min(array5){
+    let max = array5[0];
+    let min = array5[0]
+    for (let e of array5){
+        if (e> max){
+            max = e;
+        }
+        if (e < min){
+            min = e;
+        }
+    }
+    rs.push(min,max)   
+    return rs
+}
+console.log(max_min(array5))
+
+
+
+
+
+// // FILTER
+// array6= [0,1,10]
+// function even(array6){
+//     return array6.filter((x)=> x%2 === 0)
+// }
+// console.log(positive(array6))
+
+
+
+
+
+
+// FILTER 2
+arra= [0,1,10,20]
+function filterItems(arra,critaire){
+    return arra.filter(critaire)
+}
+
+const positivee = (x) => x > 0 ;
+console.log(filterItems(arra,positivee))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
