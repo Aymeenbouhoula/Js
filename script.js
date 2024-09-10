@@ -252,16 +252,34 @@ console.log(max_min(array5))
 
 
 // FILTER 2
-arra= [0,1,10,20]
-function filterItems(arra,critaire){
-    return arra.filter(critaire)
+// arra= [0,1,10,20]
+// function filterItems(arra,critaire){
+//     return arra.filter(critaire)
+// }
+
+// const positivee = (x) => x > 0 ;
+// console.log(filterItems(arra,positivee))
+
+
+
+
+
+// FACTORIEL //
+function Factoriel(n){
+    if (n === 0 || n === 1 ){
+        return 1
+    }
+    
+    else {
+        let rslt = 1
+        for (let i =2 ; i <= n ; i++ ){
+            rslt = rslt * i
+        }
+        return rslt
+    }
 }
 
-const positivee = (x) => x > 0 ;
-console.log(filterItems(arra,positivee))
-
-
-
+console.log(Factoriel(5))
 
 
 
